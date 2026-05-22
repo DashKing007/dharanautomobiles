@@ -1,17 +1,18 @@
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Open Untitled-1.html",
-            "file": "c:\\Users\\thapa\\Github Automobile website\\Untitled-1.html"
-        }
-    ]
-}
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
