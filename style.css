@@ -237,6 +237,12 @@ html {
   display: block;
 }
 
+
+
+
+
+
+
 .faq-mini {
   background: #151515;
   border: 1px solid #2e2e2e;
@@ -298,6 +304,19 @@ html {
   transform: rotate(45deg);
 }
 
+.faq-mini {
+  width: 100%;
+  max-width: 100%;
+}
+
+.faq-wrapper {
+  width: 100%;
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .contact-extra {
     grid-template-columns: 1fr;
@@ -315,4 +334,41 @@ html {
   .faq-mini h2 {
     font-size: 28px;
   }
+}
+
+.hours-section {
+  background: #111111;
+}
+
+.hours-container {
+  max-width: 700px;
+  margin-top: 30px;
+  background: #1a1a1a;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #2e2e2e;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 30px;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 18px;
+  color: #dddddd;
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.closed {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.faq-mini {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: none !important;
 }
